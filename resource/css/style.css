@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+  color-scheme: light dark;
+  --main: #ddc61a;
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--color);
+}
+
+header {
+  height: 10vh;
+  justify-content: space-between;
+}
+
+header, footer {
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+footer {
+  height: 5vh;
+}
+
+button {
+  padding: 1rem 0;
+  border: transparent;
+  font-weight: 700;
+  border-radius: 1rem;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: var(--main);
+}
+
+/*===== timeline =====*/
+.timeline {
+  height: 85vh;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+/* content-timeline */
+.content-timeline {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 3rem;
+}
+
+.point:hover {
+  cursor: pointer;
+}
+
+.point img {
+  width: 100px;
+}
+
+.point img:hover {
+  transform: rotate(10deg);
+}
+
+/* nav-timeline */
+.nav-timeline {
+  padding: 0 1rem;
+}
+
+.nav-timeline ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.nav-timeline ul li:hover {
+  cursor: pointer;
+}
+
+/* modal */
+.modal {
+  margin: auto;
+  padding: 2rem;
+  max-width: 10ch;
+  font-size: 1.8rem;
+  border: 1px solid var(--main);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.modal h3 {
+  text-transform: uppercase;
+}
+
+.modal p {
+  font-size: 1.2rem;
+}
+
+.modal button {
+  width: 100px;
+}
+.modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.d-none {
+  display: none;
+}
